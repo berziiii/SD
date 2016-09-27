@@ -433,6 +433,7 @@ p {
 
 #primary-menu li a:hover {
 	border-top: 4px solid #005740;
+	text-decoration: none;
 }
 
 #primary-menu li.current-menu-item a,
