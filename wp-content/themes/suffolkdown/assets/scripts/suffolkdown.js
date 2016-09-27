@@ -9,6 +9,7 @@ var closeResponsiveMenu = function () {
   $('.responsive-nav-container').toggleClass('hide');
   $('#nav-menu-button').toggleClass('show');
   $('#close-nav-menu-button').removeClass('hide');
+  $('#close-nav-menu-button').addClass('show');
   $('#masthead').toggleClass('freeze');
 };
 

@@ -362,9 +362,8 @@ p {
 
 .close-nav-button {
 	font-size: 80px;
-	height: 10px;
 	padding-right: 20px;
-	z-index: 1001px;
+	/*z-index: 1001px;*/
 }
 
 .main-navigation {
