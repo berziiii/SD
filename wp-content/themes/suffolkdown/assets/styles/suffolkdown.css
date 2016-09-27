@@ -325,6 +325,10 @@ p {
 	top: 0px;
 }
 
+.no-scroll {
+	overflow: hidden;
+}
+
 
 
 

@@ -3,6 +3,7 @@ var openResponsiveMenu = function () {
   $('#nav-menu-button').toggleClass('hide');
   $('#close-nav-menu-button').toggleClass('hide');
   $('#masthead').toggleClass('freeze');
+  $("body").toggleClass('no-scroll');
 };
 
 var closeResponsiveMenu = function () {
@@ -11,6 +12,7 @@ var closeResponsiveMenu = function () {
   $('#close-nav-menu-button').removeClass('hide');
   $('#close-nav-menu-button').addClass('show');
   $('#masthead').toggleClass('freeze');
+  $("body").toggleClass('no-scroll');
 };
 
 $(document).ready(function(){
