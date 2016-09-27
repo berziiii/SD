@@ -238,7 +238,7 @@ html,
 body {
 	background: #fff;
 	margin: 0 auto;
-	min-width: 1200px;
+	width: 100%;
 }
 
 body {
@@ -306,10 +306,32 @@ p {
 	color: #fff;
 }
 
+.clear-float {
+	clear: both;
+}
+
+
+/* Header */
+
 .site-header {
 	height: 130px;
 	margin: 0 auto;
 	width: 100%;
+}
+
+.site-image-container {
+	float: left;
+	width: 25%;
+}
+
+.site-nav-container {
+	float: left;
+	width: 75%;
+	text-align: center;
+}
+
+.main-navigation {
+	float: right;
 }
 
 .home-link {
@@ -330,8 +352,7 @@ p {
 }
 
 .navbar {
-	float: right;
-	margin-right: 15px;
+	width: 100%;
 }
 
 #primary-menu {
@@ -403,7 +424,8 @@ p {
 
 .page .entry-header .entry-header-innner {
 	margin: 0 auto;
-	max-width: 1200px;
+	/*max-width: 1200px;*/
+	width: 100%;
 }
 
 .page .entry-header-innner h1 {
@@ -417,7 +439,7 @@ p {
 
 .page .entry-content {
 	margin: 40px auto;
-	max-width: 1200px;
+	/*max-width: 1200px;*/
 	position: relative;
 }
 
@@ -952,4 +974,24 @@ p {
 
 .ninja-forms-error-msg p {
 	display: none;
+}
+
+
+
+
+
+/* Media Queries*/
+
+/* NEEDED FOR LARGER SCREENS!*/
+
+/*@media (max-width: 1200px) {
+	body {
+		max-width: 1200px;
+	}
+}*/
+
+@media (max-width: 992px) {
+	.site-nav-container {
+		display: none;
+	}
 }
