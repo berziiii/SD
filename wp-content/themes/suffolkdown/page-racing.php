@@ -27,7 +27,17 @@ get_header(); ?>
 						<div class="entry-content-inner">
 							<div class="entry-inner-racing">
 								<div class="racing-content">
-									<?php the_field('content'); ?>
+									<?php if( get_field('track_conditions') ): ?>
+									<div class="entry-content-side">
+										<h2>Track Conditions</h2>
+										<div class="entry-content-side-content">
+											<?php the_field('track_conditions'); ?>
+										</div>
+									</div>
+									<?php endif; ?>
+									<div class="racing-inner-content">
+										<?php the_field('content'); ?>
+									</div>
 								</div>
 								<div class="racing-program-comments">
 									<?php if( get_field('program_comments') ): ?>
@@ -37,14 +47,6 @@ get_header(); ?>
 								</div>
 							</div>
 						</div>
-						<?php if( get_field('track_conditions') ): ?>
-							<div class="entry-content-side">
-								<h2>Track Conditions</h2>
-								<div class="entry-content-side-content">
-									<?php the_field('track_conditions'); ?>
-								</div>
-							</div>
-						<?php endif; ?>
 					</div>
 				</article>
 				<?php comments_template(); ?>
