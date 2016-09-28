@@ -25,7 +25,9 @@ get_header(); ?>
 					</header>
 					<div class="entry-content">
 						<div class="entry-content-inner">
-							<?php the_field('content'); ?>
+							<div class="entry-inner-container">
+								<?php the_field('content'); ?>
+							</div>
 						</div>
 					</div>
 				</article>

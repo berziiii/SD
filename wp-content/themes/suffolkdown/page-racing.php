@@ -25,11 +25,17 @@ get_header(); ?>
 					</header>
 					<div class="entry-content">
 						<div class="entry-content-inner">
-							<?php the_field('content'); ?>
-						<?php if( get_field('program_comments') ): ?>
-							<br>
-							<?php the_field('program_comments'); ?>
-						<?php endif; ?>
+							<div class="entry-inner-racing">
+								<div class="racing-content">
+									<?php the_field('content'); ?>
+								</div>
+								<div class="racing-program-comments">
+									<?php if( get_field('program_comments') ): ?>
+										<br>
+										<?php the_field('program_comments'); ?>
+									<?php endif; ?>
+								</div>
+							</div>
 						</div>
 						<?php if( get_field('track_conditions') ): ?>
 							<div class="entry-content-side">
