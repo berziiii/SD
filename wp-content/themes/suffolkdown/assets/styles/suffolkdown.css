@@ -1056,22 +1056,13 @@ p {
 
 /* Media Queries*/
 
-/* NEEDED FOR LARGER SCREENS!*/
-
-/*@media (min-width: 1500px) {
-	body {
-		margin: 0px auto;
-		max-width: 1500px;
-	}
-}*/
-
-@media (min-width: 993px) {
+@media screen and (min-width: 993px) {
 	.responsive-nav-container {
 		visibility: hidden;
 	}
 }
 
-@media (max-width: 992px) {
+@media screen and (max-width: 992px) {
 
 	/* Header Section */
 
@@ -1165,8 +1156,63 @@ p {
 	}
 }
 
-@media (max-width: 500px) {
+@media screen and (max-width: 992px) and (max-height: 500px) {
+		#primary-menu {
+			padding-top: 50px;
+			width: 100%;
+			text-align: center;
+		}
+
+		#primary-menu li {
+			display: inline;
+			height: 100px;
+			text-align: center;
+			padding-left: 20px;
+		}
+
+		#primary-menu > .menu-item > a {
+			color: #005740;
+			text-decoration: none;
+			font-size: 18px;
+			padding: 0px;
+		}
+}
+
+@media screen and (max-width: 600px) {
 	.entry-inner-container {
 		margin-top: 600px;
 	}
+
+	#primary-menu > .menu-item > a {
+		font-size: 25px;
+		height: 60px;
+	}
+
+	#primary-menu > .menu-item {
+		height: 60px;
+	}
+}
+
+@media screen and (max-width: 600px) and (max-height: 400px) {
+		.nav-menu {
+			text-align: center;
+		}
+		#primary-menu {
+			padding-top: 50px;
+			width: 100%;
+		}
+
+		#primary-menu li {
+			display: inline;
+			height: 100px;
+			text-align: center;
+			padding-left: 20px;
+		}
+
+		#primary-menu > .menu-item > a {
+			color: #005740;
+			text-decoration: none;
+			font-size: 14px;
+			padding: 0px;
+		}
 }
