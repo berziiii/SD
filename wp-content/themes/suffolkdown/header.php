@@ -16,8 +16,9 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width">
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri() . "/assets/styles/suffolkdown.css"; ?>">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	<script src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri() . "/assets/bootstrap-3.3.5-dist/css/bootstrap.min.css"; ?>">
+	<script type="text/javascript" src="<?php echo get_template_directory_uri() . "/assets/scripts/jquery-3.1.1.min.js"; ?>"></script>
+	<script type="text/javascript" src="<?php echo get_template_directory_uri() . "/assets/bootstrap-3.3.5-dist/js/bootstrap.min.js"; ?>"></script>
 	<script type="text/javascript" src="<?php echo get_template_directory_uri() . "/assets/scripts/suffolkdown.js"; ?>"></script>
 	<?php wp_head(); ?>
 </head>
