@@ -238,14 +238,15 @@ html,
 body {
 	background: #fff;
 	margin: 0 auto;
-	width: 100%;
+	max-width: 1500px;
+
 }
 
 body {
 	background: #fff;
 	min-height: 600px;
 	margin: 0 auto;
-	width: 100%;
+	max-width: 1500px;
 }
 
 a {
@@ -570,7 +571,14 @@ p {
 	display: none;
 }
 
+.entry-header > .entry-title > .entry-post-link {
+	color: #e1a738;
+}
 
+.entry-header > .entry-title > .entry-post-link:hover {
+	text-decoration: none;
+	color: #cb8f1c;
+}
 
 
 /* Page: Home */
@@ -1050,9 +1058,10 @@ p {
 
 /* NEEDED FOR LARGER SCREENS!*/
 
-/*@media (max-width: 1200px) {
+/*@media (min-width: 1500px) {
 	body {
-		max-width: 1200px;
+		margin: 0px auto;
+		max-width: 1500px;
 	}
 }*/
 
@@ -1099,7 +1108,7 @@ p {
 
 
 
-	/* Contact Page */
+	/* Template Pages */
 
 	.ninja-forms-cont {
 		float: left;
@@ -1127,10 +1136,32 @@ p {
 
 	.entry-inner-racing {
 		margin-top: 350px;
+		width: 100%;
 	}
 
-	.entry-inner-racing,  {
+	.page-template-page-racing .entry-content-inner {
+	    padding: 0 15px;
+	    width: 100%;
+			max-width: 100%;
+	}
+	.entry-inner-racing  {
 		margin-top: 350px;
+	}
+
+	.post {
+		width: 100%;
+		padding: 20px;
+	}
+
+	.entry-content > .entry-content-side > h2,
+	.entry-content > .entry-content-side > .entry-content-side-content {
+		text-align: left;
+	}
+
+	.page-template-page-racing .button {
+		width: 100%;
+		text-align: center;
+		clear: both;
 	}
 }
 
