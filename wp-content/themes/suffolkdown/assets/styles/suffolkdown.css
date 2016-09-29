@@ -1202,6 +1202,13 @@ p {
 		max-width: 100%;
 	}
 
+	/* Contact Page */
+	
+	.page-template-page-contact .entry-content-inner {
+		width: 100%;
+		max-width: 100%;
+	}
+
 }
 
 @media screen and (max-width: 992px) and (max-height: 500px) {
