@@ -684,6 +684,7 @@ p {
 	float: left;
 	padding: 0 15px;
 	width: 100%;
+	margin-top: 50px;
 	/*max-width: calc(1200px - 30px);
 	width: calc(100% - 30px);*/
 }
@@ -1303,6 +1304,17 @@ p {
 		left: calc(785px * 2);
 		/*min-width: 812px*/
 	}
+
+	.page-template-page-simulcasting .header-days,
+	.page-template-page-simulcasting .header-date {
+		font-size: 20px;
+	}
+
+	.page-template-page-simulcasting .header-month {
+		display: none;
+	}
+
+
 }
 
 @media screen and (max-width: 992px) and (max-height: 500px) {

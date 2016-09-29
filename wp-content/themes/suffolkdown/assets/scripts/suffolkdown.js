@@ -25,6 +25,14 @@
 // 	}
 // };
 
+// if (viewport.scrollTop() > 148) {
+//             header.css('position', 'fixed').addClass('compressed');
+//             section.css('padding-top', 148);
+//         } else {
+//             header.css('position', 'relative').removeClass('compressed');
+//             section.css('padding-top', 0);
+//         }
+
 
 // Responsive Nav Methods
 
@@ -44,6 +52,26 @@ var closeResponsiveMenu = function () {
   $('#masthead').toggleClass('freeze');
   $("body").toggleClass('no-scroll');
 };
+
+
+
+$(window).scroll(function() {
+  var dates = $('.header-date').offset();
+  // if (dates.top < 100) {
+  //   console.log('FREEZE');
+  // }
+  console.log(dates.top);
+  // if (dates < 100) {
+  //   console.log('FREEZE');
+  // }
+});
+
+// {
+//   var dates = $('.header-date').position();
+//   if (dates.top() < 100) {
+//     console.log(datesPostion);
+//   }
+// });
 
 $(window).resize(function() {
   if ($(window).width() <= 820) {
@@ -71,4 +99,5 @@ $(document).ready(function(){
   $('#nav-menu-button').on('click', openResponsiveMenu);
   $('#close-nav-menu-button').on('click', openResponsiveMenu);
   viewPortCheck();
+  // staticScheduleDates();
 });
