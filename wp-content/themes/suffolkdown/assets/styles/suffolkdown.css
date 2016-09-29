@@ -332,6 +332,15 @@ p {
 	overflow: hidden;
 }
 
+.timesOneShift {
+	left: 100%;
+}
+
+.timesTwoShift {
+	left: 200%
+	/*min-width: 812px*/
+}
+
 .button:hover,
 .icon-social-facebook:hover,
 .icon-social-twitter:hover,
@@ -659,6 +668,18 @@ p {
 }
 
 /* Page: Simulcasting */
+
+.page-template-page-simulcasting .simulcasting-wrapper {
+	position: relative;
+	width: 100%;
+	overflow: scroll;
+}
+
+/*.page-template-page-simulcasting .simulcasting-wrapper:not(:first-child) {
+	position: absolute;
+	left: 100%;
+}*/
+
 .page-template-page-simulcasting .entry-content-inner {
 	float: left;
 	padding: 0 15px;
@@ -679,7 +700,20 @@ p {
 	font-family: "Adelle-Regular", Arial;
 	font-size: 12px;
 	width: 100%;
+	position: relative;
 }
+
+.page-template-page-simulcasting > .simulcasting-wrapper > table {
+	position: absolute;
+	left: 100%;
+}
+
+
+
+/*.page-template-page-simulcasting > .simulcasting-wrapper:first-child {
+	position: relative;
+	left: 0;
+}*/
 
 .page-template-page-simulcasting table td.bg{
 	background: #ccc;
@@ -1211,6 +1245,64 @@ p {
 		max-width: 100%;
 	}
 
+	/*.page-template-page-simulcasting .simulcasting-wrapper > table {
+		position: absolute;
+		float: left;
+		margin: 0px 60px 0px 0px;
+		min-width: 785px;
+		border: 1px solid green;
+	}
+
+	.page-template-page-simulcasting .simulcasting-wrapper  table:first-child {
+		position: relative;
+		border: 1px solid green;
+		left: 0%;
+		margin: 0px 60px 0px 0px;
+		min-width: 785px;
+	}*/
+
+	/* Simulcasting Page */
+	/*.page-template-page-simulcasting > .simulcasting-wrapper:nth-child(0) {
+		position: relative;
+		/*left: 100%;
+	}*/
+
+	/*.page-template-page-simulcasting .simulcasting-wrapper:first-child {
+		position: relative;
+	}*/
+
+	.page-template-page-simulcasting .header-month-inner {
+		width: 100vw;
+		text-align: center;
+	}
+}
+
+@media screen and (max-width: 820px) {
+
+	.page-template-page-simulcasting .simulcasting-wrapper > table {
+		position: absolute;
+		float: left;
+		margin: 0px 60px 0px 0px;
+		min-width: 785px;
+		border: 1px solid green;
+	}
+
+	.page-template-page-simulcasting .simulcasting-wrapper  table:first-child {
+		position: relative;
+		border: 1px solid green;
+		left: 0%;
+		margin: 0px 60px 0px 0px;
+		min-width: 785px;
+	}
+
+	.timesOneShift {
+		left: 785px;
+	}
+
+	.timesTwoShift {
+		left: calc(785px * 2);
+		/*min-width: 812px*/
+	}
 }
 
 @media screen and (max-width: 992px) and (max-height: 500px) {
