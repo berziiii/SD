@@ -1127,8 +1127,9 @@ p {
 
 	.ninja-forms-cont {
 		float: left;
+		position: relative !important;
 		width: 100%;
-		margin-top: -40px;
+		margin-bottom: 50px;
 		/*padding: 0px;*/
 	}
 
@@ -1190,6 +1191,17 @@ p {
 		padding: 0px 20px;
 	}
 
+	/* Events Page */
+
+	.page .entry-content{
+		margin: 0px auto;
+	}
+
+	.page-template-page-events .entry-content-inner {
+		width: 100%;
+		max-width: 100%;
+	}
+
 }
 
 @media screen and (max-width: 992px) and (max-height: 500px) {
@@ -1215,10 +1227,6 @@ p {
 }
 
 @media screen and (max-width: 600px) {
-	.entry-inner-container {
-		margin-top: 600px;
-	}
-
 	#primary-menu > .menu-item > a {
 		font-size: 25px;
 		height: 60px;
