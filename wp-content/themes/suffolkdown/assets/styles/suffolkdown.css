@@ -669,6 +669,13 @@ p {
 
 /* Page: Simulcasting */
 
+.simulcasting-title {
+	text-align: center;
+	margin: 50px auto;
+	color: #005740;
+	text-transform: uppercase;
+}
+
 .page-template-page-simulcasting .simulcasting-wrapper {
 	position: relative;
 	width: 100%;
@@ -747,6 +754,11 @@ p {
 	border-spacing: 4px;
 	font-family: "Adelle-Regular", Arial;
 }
+
+.page-template-page-simulcasting table thead tr:nth-child(3) {
+	background-color: #d7d7d7;
+}
+
 
 .page-template-page-simulcasting .header-month {
 	background: #005740;
@@ -1281,33 +1293,35 @@ p {
 @media screen and (max-width: 820px) {
 
 	.page-template-page-simulcasting .simulcasting-wrapper > table {
-		position: absolute;
+		/*position: absolute;
 		float: left;
 		margin: 0px 60px 0px 0px;
 		min-width: 785px;
-		border: 1px solid green;
+		border: 1px solid green;*/
 	}
 
 	.page-template-page-simulcasting .simulcasting-wrapper  table:first-child {
-		position: relative;
+		/*position: relative;
 		border: 1px solid green;
 		left: 0%;
 		margin: 0px 60px 0px 0px;
-		min-width: 785px;
+		min-width: 785px;*/
 	}
 
 	.timesOneShift {
-		left: 785px;
+		/*left: 785px;*/
 	}
 
 	.timesTwoShift {
-		left: calc(785px * 2);
+		/*left: calc(785px * 2);*/
 		/*min-width: 812px*/
 	}
 
 	.page-template-page-simulcasting .header-days,
 	.page-template-page-simulcasting .header-date {
-		font-size: 20px;
+		font-size: 22px;
+    background-color: #005740;
+    color: #fff;
 	}
 
 	.page-template-page-simulcasting .header-month {

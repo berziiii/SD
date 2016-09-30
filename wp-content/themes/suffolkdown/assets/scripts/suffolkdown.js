@@ -55,16 +55,16 @@ var closeResponsiveMenu = function () {
 
 
 
-$(window).scroll(function() {
-  var dates = $('.header-date').offset();
-  // if (dates.top < 100) {
-  //   console.log('FREEZE');
-  // }
-  console.log(dates.top);
-  // if (dates < 100) {
-  //   console.log('FREEZE');
-  // }
-});
+// $(window).scroll(function() {
+//   var dates = $('.header-date').offset();
+//   // if (dates.top < 100) {
+//   //   console.log('FREEZE');
+//   // }
+//   console.log(dates.top);
+//   // if (dates < 100) {
+//   //   console.log('FREEZE');
+//   // }
+// });
 
 // {
 //   var dates = $('.header-date').position();
@@ -75,21 +75,17 @@ $(window).scroll(function() {
 
 $(window).resize(function() {
   if ($(window).width() <= 820) {
-    $('[data-id="1"]').addClass('timesOneShift');
-    $('[data-id="2"]').addClass('timesTwoShift');
+    $('.table-container').addClass('table-responsive');
   } else {
-    $('[data-id="1"]').removeClass('timesOneShift');
-    $('[data-id="2"]').removeClass('timesTwoShift');
+    $('.table-container').removeClass('table-responsive');
   }
 });
 
 var viewPortCheck = function() {
   if ($(window).width() <= 820) {
-    $('[data-id="1"]').addClass('timesOneShift');
-    $('[data-id="2"]').addClass('timesTwoShift');
+    $('.table-container').addClass('table-responsive');
   } else {
-    $('[data-id="1"]').removeClass('timesOneShift');
-    $('[data-id="2"]').removeClass('timesTwoShift');
+    $('.table-container').removeClass('table-responsive');
   }
 };
 
@@ -99,5 +95,9 @@ $(document).ready(function(){
   $('#nav-menu-button').on('click', openResponsiveMenu);
   $('#close-nav-menu-button').on('click', openResponsiveMenu);
   viewPortCheck();
-  // staticScheduleDates();
+  $('table.table-responsive').floatThead({
+    responsiveContainer: function($table){
+        return $table.closest('.table-container');
+    }
+  });
 });
