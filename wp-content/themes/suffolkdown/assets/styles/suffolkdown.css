@@ -716,6 +716,10 @@ p {
 	left: 100%;
 }
 
+.page-template-page-simulcasting table thead tr:nth-child(3) {
+	background-color: #d7d7d7;
+}
+
 
 
 /*.page-template-page-simulcasting > .simulcasting-wrapper:first-child {
@@ -754,11 +758,6 @@ p {
 	border-spacing: 4px;
 	font-family: "Adelle-Regular", Arial;
 }
-
-.page-template-page-simulcasting table thead tr:nth-child(3) {
-	background-color: #d7d7d7;
-}
-
 
 .page-template-page-simulcasting .header-month {
 	background: #005740;
@@ -1309,7 +1308,7 @@ p {
 	}
 
 	.timesOneShift {
-		/*left: 785px;*/
+		/*left: 785px
 	}
 
 	.timesTwoShift {
@@ -1326,6 +1325,10 @@ p {
 
 	.page-template-page-simulcasting .header-month {
 		display: none;
+	}
+
+	.page-template-page-simulcasting table thead tr:nth-child(3) {
+		background-color: #d7d7d7;
 	}
 
 
@@ -1351,6 +1354,28 @@ p {
 			font-size: 18px;
 			padding: 0px;
 		}
+}
+
+@media screen and (max-width: 350px) and (max-height: 475px) {
+	#primary-menu {
+		padding-top: 50px;
+		width: 100%;
+		text-align: center;
+	}
+
+	#primary-menu li {
+		display: block;
+		height: 80px;
+		text-align: center;
+		padding-left: 20px;
+	}
+
+	#primary-menu > .menu-item > a {
+		color: #005740;
+		text-decoration: none;
+		font-size: 12px;
+		padding: 0px;
+	}
 }
 
 @media screen and (max-width: 600px) {
