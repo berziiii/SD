@@ -43,6 +43,15 @@ var scrollPrompt = function () {
 
 //  Document Ready
 
+// $(function(){
+//   console.log(this);
+//
+//
+//   $(window).on("load resize", function(){
+//     console.log("hi");
+//   });
+// });
+
 $(document).ready(function(){
   $('#nav-menu-button').on('click', openResponsiveMenu);
   $('#close-nav-menu-button').on('click', openResponsiveMenu);

@@ -346,7 +346,7 @@ p {
 	height: 130px;
 	margin: 0 auto;
 	width: 100%;
-	max-width: 1500px;
+	max-width: 1200px;
 }
 
 .site-image-container {
@@ -495,7 +495,7 @@ p {
 
 .page .entry-header .entry-header-innner {
 	margin: 0 auto;
-	max-width: 1500px;
+	max-width: 1200px;
 	width: 100%;
 }
 
@@ -510,7 +510,7 @@ p {
 
 .page .entry-content {
 	margin: 40px auto;
-	max-width: 1500px;
+	max-width: 1200px;
 	position: relative;
 }
 
@@ -926,8 +926,8 @@ p {
 
 .blog .entry-meta,
 .single .entry-meta {
-	margin-left: 15px;
-	margin-right: 15px;
+	/*margin-left: 15px;*/
+	margin: 20px 0px;
 }
 
 .blog .entry-meta .date,
@@ -939,7 +939,7 @@ p {
 
 .blog .entry-content,
 .single .entry-content {
-	margin: 30px 0px 60px 0px;
+	margin: 0px 0px 60px 0px;
 	padding: 0px 20px;
 	width: 100%;
 }
@@ -951,6 +951,11 @@ p {
 .single .nav-links {
 	margin: 0 auto 30px;
 	max-width: calc(1200px - 30px);
+}
+
+.post {
+	max-width: 1200px;
+	margin: 0 auto;
 }
 
 
@@ -1105,7 +1110,7 @@ p {
 
 .arrow-wrap-right {
   position:fixed;
-  z-index:1;
+  z-index:10000;
   top:50%;
 	right: 0px;
   background:#111;
@@ -1121,7 +1126,7 @@ p {
 
 .arrow-wrap-down {
   position:fixed;
-  z-index:1;
+  z-index:10000;
   bottom: 0px;
 	left: calc(50% - 5em);
   background:#111;
@@ -1178,4 +1183,9 @@ p {
 .fade-out {
 	opacity: 0;
 	transition: opacity 1.5s ease-out;
+}
+
+
+.navbar {
+	background: pink;
 }
