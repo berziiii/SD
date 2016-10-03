@@ -1193,6 +1193,7 @@ p {
 
 	.entry-content-inner {
 		width: 100%;
+		padding: 0px 15px;
 	}
 
 	.entry-inner-racing {
@@ -1326,7 +1327,16 @@ p {
 	}
 
 	.home-link {
-		margin-top: 10px;
+		margin-top: 5px;
+	}
+
+	.menu-toggle,
+	.close-nav-button {
+		line-height: 120px;
+	}
+
+	.close-nav-button {
+		margin-top: -14px;
 	}
 
 	.responsive-nav-container {
