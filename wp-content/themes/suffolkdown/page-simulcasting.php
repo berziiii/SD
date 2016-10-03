@@ -27,6 +27,14 @@ get_header(); ?>
 						<div class="entry-content-inner">
 							<?php the_field('content'); ?>
 						</div>
+						<div class="arrow-wrap-right" href="#content">
+							<span class="arrow-right"></span>
+						<!--<span class="hint">scroll</span>-->
+						</div>
+						<div class="arrow-wrap-down" href="#content">
+							<span class="arrow-down"></span>
+						<!--<span class="hint">scroll</span>-->
+						</div>
 					</div>
 					<footer class="entry-meta">
 						<?php edit_post_link( __( 'Edit', 'suffolkdowns' ), '<span class="edit-link">', '</span>' ); ?>

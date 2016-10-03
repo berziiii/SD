@@ -19,6 +19,26 @@ var closeResponsiveMenu = function () {
 };
 
 
+// Scroll Prompt on mobile for table
+
+var scrollPrompt = function () {
+
+  $(window).scroll( function(){
+    if ($('table').offset().top == $(window).scrollTop()) {
+      $('.arrow-wrap-right').addClass('fade-in');
+      setTimeout(function() {
+        $(".arrow-wrap-right").removeClass("fade-in");
+        $(".arrow-wrap-right").addClass("fade-out");
+        $('.arrow-wrap-down').addClass('fade-in').delay(1500);
+      }, 1500);
+      setTimeout(function() {
+        $(".arrow-wrap-down").removeClass("fade-in").delay(1500);
+        $(".arrow-wrap-down").addClass("fade-out").delay(1500);
+      }, 3000);
+    }
+  });
+};
+
 
 
 //  Document Ready
@@ -31,4 +51,7 @@ $(document).ready(function(){
         return $table.closest('.table-container');
     }
   });
+  if ($(window).width() <= 820) {
+    scrollPrompt();
+  }
 });
