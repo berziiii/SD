@@ -17,12 +17,12 @@
 	<meta name="viewport" content="width=device-width">
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri() . "/assets/styles/suffolkdown.css"; ?>">
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri() . "/assets/bootstrap-3.3.5-dist/css/bootstrap.min.css"; ?>">
-	<link rel="stylesheet" href="<?php echo get_template_directory_uri() . "/assets/styles/media.css"; ?>">
 	<script type="text/javascript" src="<?php echo get_template_directory_uri() . "/assets/scripts/jquery-3.1.1.min.js"; ?>"></script>
+	<script type="text/javascript" src="<?php echo get_template_directory_uri() . "/assets/scripts/debounce.js"; ?>"></script>
 	<script type="text/javascript" src="<?php echo get_template_directory_uri() . "/assets/scripts/mkoryak-floatThead/dist/jquery.floatThead.min.js"; ?>"></script>
 	<script type="text/javascript" src="<?php echo get_template_directory_uri() . "/assets/bootstrap-3.3.5-dist/js/bootstrap.min.js"; ?>"></script>
 	<script type="text/javascript" src="<?php echo get_template_directory_uri() . "/assets/scripts/suffolkdown.js"; ?>"></script>
-	<?php wp_head(); ?>
+	<!-- <?php wp_head(); ?> -->
 </head>
 <body <?php body_class(); ?>>
 	<div id="page" class="hfeed site">
