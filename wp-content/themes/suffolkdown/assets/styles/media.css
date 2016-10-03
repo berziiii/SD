@@ -241,6 +241,11 @@
 	#primary-menu > .menu-item {
 		height: 70px;
 	}
+
+  .hero-header-inner h1 {
+    line-height: 40px;
+    font-size: 30px;
+  }
 }
 
 @media screen and (max-width: 600px) and (max-height: 400px) {
