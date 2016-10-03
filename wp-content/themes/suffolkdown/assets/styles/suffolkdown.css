@@ -880,8 +880,7 @@ p {
 .page-template-page-events .entry-content-inner {
 	float: left;
 	padding: 0 15px;
-	max-width: calc(1200px - 470px);
-	width: calc(100% - 30px);
+	width: 60%;
 }
 
 .page-template-page-events .entry-content-inner:first-child {
@@ -961,8 +960,7 @@ p {
 .page-template-page-contact .entry-content-inner {
 	float: left;
 	padding: 0 15px;
-	max-width: calc(1200px - 470px);
-	width: calc(100% - 30px);
+	width: 60%;
 }
 
 .page-template-page-contact .entry-content-inner:first-child {

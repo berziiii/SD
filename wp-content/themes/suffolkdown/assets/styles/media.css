@@ -112,7 +112,9 @@
 		text-align: left;
 	}
 
-	.racing-program-comments {
+	.racing-program-comments,
+	.page-template-page-events .entry-content-inner,
+	.page-template-page-contact .entry-content-inner {
 		width: 100%;
 	}
 
