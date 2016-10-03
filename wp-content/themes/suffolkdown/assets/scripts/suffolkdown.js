@@ -26,7 +26,7 @@ $(function(){
   $(window).on('load resize', function() {
     if ($(window).width() <= 820) {
       $(window).scroll(function(){
-        if ($('table').offset().top == $(window).scrollTop()) {
+        if ($('#primary').attr("name") === 'simulcasting' && $('table').offset().top === $(window).scrollTop()) {
           $('.arrow-wrap-right').addClass('fade-in');
           setTimeout(function() {
             $(".arrow-wrap-right").removeClass("fade-in");

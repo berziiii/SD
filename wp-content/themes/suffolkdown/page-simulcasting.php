@@ -5,7 +5,7 @@
 ?>
 <?php
 get_header(); ?>
-	<div id="primary" class="content-area">
+	<div id="primary" class="content-area" name="simulcasting" >
 		<div id="content" class="site-content" role="main">
 			<?php /* The loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
