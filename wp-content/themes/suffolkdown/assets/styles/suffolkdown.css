@@ -1539,18 +1539,17 @@ p {
 	#primary-menu {
 		padding-top: 50px;
 		width: 100%;
-		text-align: center;
 	}
 
 	#primary-menu li {
 		display: block;
 		height: 60px;
-		text-align: center;
 		padding-left: 20px;
 	}
 
 	#primary-menu > .menu-item {
 		height: 55px;
+		text-align: left;
 	}
 
 	#primary-menu > .menu-item > a {
@@ -1562,12 +1561,16 @@ p {
 }
 
 @media screen and (max-width: 480px) and (max-height: 350px) {
+	#primary-menu ul {
+		text-align: left;
+	}
 	#primary-menu li {
 		display: inline;
 	}
 
 	#primary-menu > .menu-item > a {
 		font-size: 12px;
+		padding: 5px;
 	}
 
 }
