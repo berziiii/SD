@@ -761,7 +761,7 @@ p {
 }
 
 .page-template-page-simulcasting .header-days {
-	color: #fff;
+	color: #005740;
 	font-size: 14px;
 	height: 78px;
 	text-align: center;
@@ -1409,7 +1409,7 @@ p {
 			display: inline;
 			height: 100px;
 			text-align: center;
-			padding-left: 20px;
+			padding-left: 10px;
 		}
 
 		#primary-menu > .menu-item > a {
@@ -1453,12 +1453,19 @@ p {
 	.responsive-nav-container {
 		margin-top: -20px;
 	}
-
 	.page-template-page-simulcasting .header-days,
 	.page-template-page-simulcasting .header-date {
-		font-size: 22px;
+		font-size: 24px;
     background-color: #005740;
     color: #fff;
+	}
+
+	.page-template-page-simulcasting .header-days {
+		font-size: 20px;
+	}
+
+	.page-template-page-simulcasting .header-date {
+		line-height: 60px;
 	}
 
 	.page-template-page-simulcasting .header-month {
@@ -1517,7 +1524,7 @@ p {
 			display: inline;
 			height: 100px;
 			text-align: center;
-			padding-left: 20px;
+			padding-left: 10px;
 		}
 
 		#primary-menu > .menu-item > a {
