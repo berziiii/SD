@@ -1183,6 +1183,7 @@ p {
 	-webkit-transition: opacity 1.5s ease-out;
 	-moz-transition: opacity 1.5s ease-out;
 	-ms-transition: opacity 1.5s ease-out;
+	-o-transition: opacity 1.5s ease-out;
 }
 
 .fade-out {
@@ -1191,6 +1192,7 @@ p {
 	-webkit-transition: opacity 1.5s ease-out;
 	-moz-transition: opacity 1.5s ease-out;
 	-ms-transition: opacity 1.5s ease-out;
+	-o-transition: opacity 1.5s ease-out;
 }
 
 
