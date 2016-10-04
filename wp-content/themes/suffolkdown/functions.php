@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Suffolk Downs functions and definitions
  *
@@ -692,3 +693,10 @@ function dtbaker_wp_nav_menu_objects($sorted_menu_items, $args){
     return $sorted_menu_items;
 }
 add_filter('wp_nav_menu_objects','dtbaker_wp_nav_menu_objects',10,2);
+
+// Remove jquery.
+
+add_action('wp_enqueue_scripts', 'no_more_jquery');
+function no_more_jquery(){
+    wp_deregister_script('jquery');
+}

@@ -33,7 +33,6 @@ get_header(); ?>
 						</div>
 						<div class="arrow-wrap-down" href="#content">
 							<span class="arrow-down"></span>
-						<!--<span class="hint">scroll</span>-->
 						</div>
 					</div>
 					<footer class="entry-meta">
